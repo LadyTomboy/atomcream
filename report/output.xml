@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20170512 14:59:18.521" generator="Robot 3.0.2 (Python 2.7.10 on win32)">
+<suite source="C:\_VALERIYA\atomcream\test_cases" id="s1" name="Test Cases">
+<suite source="C:\_VALERIYA\atomcream\test_cases\opened_site.txt" id="s1-s1" name="Opened Site">
+<test id="s1-s1-t1" name="Main Page Opens">
+<kw type="setup" name="Open Browser to Atomcream" library="ui_keywords">
+<doc>Defaul pre-requisite step for all test cases</doc>
+<arguments>
+<arg>${HOME_URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20170512 14:59:18.889" level="INFO">Opening browser 'chrome' to base url 'https://atomcream.com/'</msg>
+<status status="PASS" endtime="20170512 14:59:25.310" starttime="20170512 14:59:18.888"></status>
+</kw>
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<doc>Sets the delay in seconds that is waited after each Selenium command.</doc>
+<arguments>
+<arg>.4</arg>
+</arguments>
+<status status="PASS" endtime="20170512 14:59:25.311" starttime="20170512 14:59:25.310"></status>
+</kw>
+<kw name="Set Window Size" library="Selenium2Library">
+<doc>Sets the `width` and `height` of the current window to the specified values.</doc>
+<arguments>
+<arg>${RESOLUTION_WIDTH}</arg>
+<arg>${RESOLUTION_HIGHT}</arg>
+</arguments>
+<status status="PASS" endtime="20170512 14:59:26.877" starttime="20170512 14:59:25.311"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20170512 14:59:27.331" starttime="20170512 14:59:26.877"></status>
+</kw>
+<status status="PASS" endtime="20170512 14:59:27.331" starttime="20170512 14:59:18.888"></status>
+</kw>
+<kw name="Verify Main Page Opened" library="main_elements">
+<doc>Checks that Atomcream page is opened correctly</doc>
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>AtomCream</arg>
+</arguments>
+<msg timestamp="20170512 14:59:27.741" level="INFO">Page title is 'AtomCream'.</msg>
+<status status="PASS" endtime="20170512 14:59:27.741" starttime="20170512 14:59:27.333"></status>
+</kw>
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>xpath=//a[@class='logo']</arg>
+</arguments>
+<msg timestamp="20170512 14:59:28.168" level="INFO">Current page contains element 'xpath=//a[@class='logo']'.</msg>
+<status status="PASS" endtime="20170512 14:59:28.168" starttime="20170512 14:59:27.741"></status>
+</kw>
+<status status="PASS" endtime="20170512 14:59:28.168" starttime="20170512 14:59:27.332"></status>
+</kw>
+<kw type="teardown" name="Close All Browsers" library="Selenium2Library">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" endtime="20170512 14:59:31.752" starttime="20170512 14:59:28.169"></status>
+</kw>
+<tags>
+<tag>Smoke</tag>
+</tags>
+<status status="PASS" endtime="20170512 14:59:31.753" critical="yes" starttime="20170512 14:59:18.887"></status>
+</test>
+<doc>Test suite for Registration and Login</doc>
+<status status="PASS" endtime="20170512 14:59:31.757" starttime="20170512 14:59:18.576"></status>
+</suite>
+<status status="PASS" endtime="20170512 14:59:31.764" starttime="20170512 14:59:18.524"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+<stat fail="0" pass="1">Smoke</stat>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Test Cases" pass="1">Test Cases</stat>
+<stat fail="0" id="s1-s1" name="Opened Site" pass="1">Test Cases.Opened Site</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

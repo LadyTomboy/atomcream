@@ -1,0 +1,39 @@
+==============================================================================
+20170512 14:58:46.712 - INFO - + START SUITE: Test Cases [ ]
+==============================================================================
+20170512 14:58:48.733 - INFO - +- START SUITE: Test Cases.Opened Site [ ]
+==============================================================================
+20170512 14:58:48.735 - INFO - +-- START TEST: Main Page Opens [ ]
+------------------------------------------------------------------------------
+20170512 14:58:48.735 - INFO - +--- START SETUP: ui_keywords.Open Browser to Atomcream [ ${HOME_URL} | ${BROWSER} ]
+20170512 14:58:48.737 - INFO - +---- START KW: Selenium2Library.Open Browser [ ${url} | ${browser} ]
+20170512 14:58:48.738 - INFO - Opening browser 'chrome' to base url 'https://atomcream.com/'
+20170512 14:58:56.760 - DEBUG - Opened browser with session id f730c63155d527d0990a42e47fa354a3
+20170512 14:58:56.761 - INFO - +---- END KW: Selenium2Library.Open Browser (8024)
+20170512 14:58:56.761 - INFO - +---- START KW: Selenium2Library.Set Selenium Speed [ .4 ]
+20170512 14:58:56.762 - INFO - +---- END KW: Selenium2Library.Set Selenium Speed (1)
+20170512 14:58:56.763 - INFO - +---- START KW: Selenium2Library.Set Window Size [ ${RESOLUTION_WIDTH} | ${RESOLUTION_HIGHT} ]
+20170512 14:58:58.326 - INFO - +---- END KW: Selenium2Library.Set Window Size (1564)
+20170512 14:58:58.326 - INFO - +---- START KW: Selenium2Library.Maximize Browser Window [ ]
+20170512 14:58:58.780 - INFO - +---- END KW: Selenium2Library.Maximize Browser Window (454)
+20170512 14:58:58.781 - INFO - +--- END SETUP: ui_keywords.Open Browser to Atomcream (10045)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20170512 14:58:58.781 - INFO - +--- START KW: main_elements.Verify Main Page Opened [ ]
+20170512 14:58:58.782 - INFO - +---- START KW: Selenium2Library.Title Should Be [ AtomCream ]
+20170512 14:58:59.190 - INFO - Page title is 'AtomCream'.
+20170512 14:58:59.190 - INFO - +---- END KW: Selenium2Library.Title Should Be (408)
+20170512 14:58:59.191 - INFO - +---- START KW: Selenium2Library.Page Should Contain Element [ xpath=//a[@class='logo'] ]
+20170512 14:58:59.620 - INFO - Current page contains element 'xpath=//a[@class='logo']'.
+20170512 14:58:59.620 - INFO - +---- END KW: Selenium2Library.Page Should Contain Element (429)
+20170512 14:58:59.621 - INFO - +--- END KW: main_elements.Verify Main Page Opened (839)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20170512 14:58:59.621 - INFO - +--- START TEARDOWN: Selenium2Library.Close All Browsers [ ]
+20170512 14:58:59.621 - DEBUG - Closing all browsers
+20170512 14:59:03.230 - INFO - +--- END TEARDOWN: Selenium2Library.Close All Browsers (3608)
+------------------------------------------------------------------------------
+20170512 14:59:03.234 - INFO - +-- END TEST: Main Page Opens (14496)
+------------------------------------------------------------------------------
+20170512 14:59:03.239 - INFO - +- END SUITE: Test Cases.Opened Site (16522)
+==============================================================================
+20170512 14:59:03.245 - INFO - + END SUITE: Test Cases (16635)
+==============================================================================
