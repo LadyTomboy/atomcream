@@ -1,0 +1,3 @@
+*** Settings ***
+
+Resource  main_elements.txt

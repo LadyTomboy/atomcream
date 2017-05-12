@@ -1,0 +1,14 @@
+*** Settings ***
+
+Documentation  This file represents high-level keywords for UI tests
+Resource  ../libs.txt
+
+*** Keywords ***
+
+Open Browser to Atomcream
+  [Documentation]  Defaul pre-requisite step for all test cases
+  [Arguments]  ${url}  ${browser}
+  Open Browser  ${url}  ${browser}
+  Set Selenium Speed  .4
+  Set Window Size  ${RESOLUTION_WIDTH}  ${RESOLUTION_HIGHT}
+  Maximize Browser Window

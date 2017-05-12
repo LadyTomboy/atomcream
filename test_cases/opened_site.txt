@@ -1,0 +1,13 @@
+** Settings ***
+
+Documentation  Test suite for Registration and Login
+Resource  ../config.txt
+
+Test Setup  Open Browser to Atomcream  ${HOME_URL}  ${BROWSER}
+Test Teardown  Close All Browsers
+
+*** Test Cases ***
+
+Main Page Opens
+  [Tags]  Smoke
+  Verify Main Page Opened

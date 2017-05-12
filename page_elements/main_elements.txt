@@ -1,0 +1,13 @@
+*** Settings ***
+
+Documentation  This file contain main page elemets
+Resource  ../libs.txt
+
+*** Variables ***
+
+*** Keywords ***
+
+Verify Main Page Opened
+  [Documentation]  Checks that Atomcream page is opened correctly
+  Title Should Be  AtomCream
+  Page Should Contain Element  xpath=//a[@class='logo']

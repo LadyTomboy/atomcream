@@ -1,0 +1,12 @@
+*** Settings ***
+
+Documentation  This file loads all libs for project in one place.
+
+Library  Selenium2Library  10  10  Take Screenshot
+Library  HttpLibrary.HTTP
+
+
+*** Keywords ***
+
+Take Screenshot
+  Capture Page Screenshot  ${TEST NAME}.png
